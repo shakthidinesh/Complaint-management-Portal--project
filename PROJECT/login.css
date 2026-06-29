@@ -1,0 +1,163 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:"poppins",sans-serif;
+    min-height: 100vh;
+    background-color:#f4f7fe;
+}
+/* common */
+.text-break{
+    display: block;
+}
+a{
+    text-decoration:none;
+}
+/* login start */
+.login{
+    min-height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;   
+}
+.login>.container{
+    min-height: 80%;
+    min-width: 80%;
+    max-width: 800px; /* Reduced laptop width to make it look well-proportioned */
+    min-height: 480px;
+    display: flex;
+    align-items: stretch;
+    border-radius:20px;
+    overflow:hidden;
+    background-color:#ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.434);
+    margin-bottom:30px;
+}
+.left{
+    text-align: center;
+    width: 50%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left h1{
+    color: #1f2937;
+    font-size: 32px; /* Balanced heading size for laptops */
+    margin-bottom:20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.left p{
+    color: #084520;
+    font-weight:600;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.right{
+    width:50%;
+    background-color:#144fcc ;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 40px 30px;
+}
+.right>form{
+    color:white;
+    text-align: center;
+}
+form>div{
+    padding:15px 0px;
+}
+.extra-link a{
+    color: white;
+    font-weight:500;
+}
+.username input,.password input{
+    width: 85%;
+    margin-top:15px;
+    padding:10px;
+    border-radius:20px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+/* button */
+.remember-me {
+    margin-bottom: 15px;
+}
+.btn>span>a{
+    color:white;
+    font-weight: 600;
+    padding:10px 35px;
+    background-color:rgb(3, 7, 43);
+    border-radius: 10px;
+    border:1px solid white;
+    display: inline-block;
+}
+.right>form>.btn>span> a{
+    color: white;
+}
+.btn>span{
+     margin-top:15px;
+     cursor:zoom-in;
+     display: block;
+}
+
+/* mouser hover */
+.extra-link a:hover{
+    color: yellow;
+}
+.username input:hover,.password input:hover{
+    background-color:lightgray;
+}
+.btn>span>a:hover{
+    color: black;
+    background-color: rgb(215, 152, 16);
+    box-shadow:10px 10px 30px #0000009a;
+    transform: translateY(-2px);
+    transition:all 100ms;
+}
+.username:hover,.password:hover{
+      color: yellow;
+}
+/* login end */
+
+
+/* responsive break points */
+
+/* tablets and medium-sized devices */
+@media (max-width: 768px) {
+    .login>.container {
+        max-width: 500px;
+        flex-direction: column; /* Stack left and right vertically */
+        min-height: auto;
+    }
+    .left, .right {
+        width: 100%;
+        padding: 35px 20px;
+    }
+    .left h1 {
+        font-size: 28px;
+    }
+}
+
+/* small mobile devices */
+@media (max-width: 480px) {
+    .login {
+        padding: 15px;
+    }
+    .login>.container {
+        max-width: 100%;
+    }
+    .left h1 {
+        font-size: 24px;
+    }
+    .username input, .password input {
+        width: 100%; /* Form fills layout comfortably on small screens */
+    }
+}

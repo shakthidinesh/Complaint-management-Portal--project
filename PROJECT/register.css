@@ -1,0 +1,202 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:"poppins",sans-serif;
+    min-height: 100vh;
+    background-color:#f4f7fe;
+   
+}
+/* common */
+.text-break{
+    display: block;
+}
+a{
+    text-decoration:none;
+}
+/*Common ends*/
+/*Register start*/
+.register{
+    margin:50px 0px;
+    text-align:center;
+    min-height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20px);
+    transition:0.5s 2s 0.5s ;
+
+}
+.register>.container h1{
+    color:rgba(0, 0, 0, 0.836);
+    margin-bottom:20px;
+    font-weight: 400;
+}
+.register>.container{
+    
+    width: 700px;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.247);
+    border-radius:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding:40px;
+
+    overflow: hidden;
+}
+.register>.container>form{
+   
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    
+}
+.register>.container>form>div{
+    line-height: 30px;;
+}
+form>div>input{
+    width:20rem;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #777777;
+    border-radius:10px;
+    outline:none;
+    
+}
+form>div>label{
+    color:#1e3a8a;
+    font-size:medium;
+    font-weight: 600;
+}
+.btn>button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background-color:#144fcc;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+.create-account a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size: 500;
+}
+.create-account>a>button{
+    border:none;
+    
+    background: none;
+    color:#2563eb;
+    font-size: 500;
+    padding: none;
+    font-size:16px;
+}
+/*Register ends*?
+/* moue hover */
+.create-account a:hover{
+    color: goldenrod;
+    transition: all 200ms;
+}
+.btn>button:hover{
+    color: black;
+    background-color: goldenrod;
+    transition: all 300ms;
+
+}
+.create-account>a>button:hover{
+        color: goldenrod;
+    transition: all 200ms;
+}
+.register>.container>form>div>input:hover{
+    background-color: gray;
+    font-weight:600;
+}
+
+@media (max-width:1024px){
+    .register{
+        margin:40px 20px;
+    }
+
+    .register>.container{
+        width:85%;
+        padding:35px;
+    }
+
+    form>div>input{
+        width:100%;
+        max-width:420px;
+    }
+}
+
+@media (max-width:768px){
+    .register{
+        margin:30px 15px;
+        transform:none;
+        min-height:100vh;
+    }
+
+    .register>.container{
+        width:95%;
+        padding:30px 25px;
+        border-radius:20px;
+    }
+
+    .register>.container h1{
+        font-size:28px;
+    }
+
+    .register>.container>form{
+        width:100%;
+    }
+
+    form>div>input{
+        width:100%;
+    }
+
+    .btn>button{
+        width:100%;
+    }
+}
+
+@media (max-width:480px){
+    .register{
+        margin:20px 10px;
+    }
+
+    .register>.container{
+        width:100%;
+        padding:25px 20px;
+        border-radius:15px;
+    }
+
+    .register>.container h1{
+        font-size:24px;
+    }
+
+    form>div>label{
+        font-size:15px;
+    }
+
+    form>div>input{
+        width:100%;
+        padding:12px;
+        font-size:15px;
+    }
+
+    .btn>button{
+        padding:13px;
+        font-size:15px;
+    }
+
+    .create-account,
+    .create-account>a>button{
+        font-size:15px;
+    }
+}
